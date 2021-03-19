@@ -1,0 +1,14 @@
+body{font-family: sans-serif;}
+h1{
+    color: blue;
+}
+h2{
+    color:green;
+}
+h1{
+    font-size: 2em;
+}
+h2{
+    font-size: 1em;
+}
+.evenrow{background-color:purple;}
