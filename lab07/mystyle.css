@@ -1,0 +1,28 @@
+h1{
+    color: #ff0000;
+    /* hex color requires the pound sign */
+    /* sixs digits starting with red, then green then blue */
+}
+
+a:link{
+    color: #0f0;
+}
+
+a:visited{
+    color: #0000ff;
+}
+
+a:hover {
+    color: #8000ff;
+    background-color: #00eeff;
+}
+
+.lookdifferent:hover {color: #999999;}
+
+body{
+    background-image: url(../image/photo.png);
+    background-size: 100%;
+    background-color:#c9c9ab;
+}
+
+p {background-color: #ffffff;}
