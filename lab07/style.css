@@ -1,0 +1,26 @@
+body{font-family: Verdana(sans-serif);}
+
+.evenrow{background-color: #9EDE73;}
+
+h1, h2{
+    color:#F7EA00;
+}
+
+h1{font-size: 2em;}
+
+h2{font-size: 1.5em;}
+
+body{
+    background-color: aquamarine;
+}
+
+nav{
+    background-color: #F7EA00;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+nav a{color:darkblue}
+
+nav a:hover{background-color: #9EDE73;}
+
+nav{margin-bottom: 30px;}
