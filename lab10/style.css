@@ -8,7 +8,7 @@ h1, h2{
 
 h1{font-size: 2em;}
 
-h2{font-size: 1.5em;}
+h2{font-size: 1.7em;}
 
 body{
     background-color: #f5f5f5;
@@ -19,8 +19,17 @@ nav{
     padding: 15px;
     margin-bottom: 30px;
 }
-nav a{color:red}
+nav a{color:darkblue}
 
 nav a:hover{background-color: #9EDE73;}
 
 nav{margin-bottom: 30px;}
+
+@media only screen and (max-width: 600px) {
+    nav a{display: block;}
+    nav a{width:100%;}
+    span{display: none;}
+    body{background-color: aliceblue;}
+}
+
+
