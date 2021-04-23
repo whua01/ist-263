@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lab 11_preview</title>
+        <style>
+            .container {
+                display:flex;
+            }
+            #first {order: 1;}
+            #second {order: 2;}
+            #third {order: 3;}
+        </style>
+        <script>
+            function WinnerMessage() {
+                document.getElementById('messages').innerHTML='You Won!';
+            }
+            function TryAgain() {
+                document.getElementById('messages').innerHTML='Wrong Shell - Try Again';            }
+            
+            function ShuffleShells() {
+                document.getElementById("first").style.order = Math.floor((Math.random() * 3) + 2);
+            }
+
+        </script>
+    </head>
+    <body onload="ShuffleShells();">
+        <h1> Choose a Walnut</h1>
+        <div class="container">
+            <img src="../image/walnut.jpeg" id="first" alt="first walnut" onclick="WinnerMessage();">
+            <img src="../image/walnut.jpeg" id="second" alt="second walnut" onclick="TryAgain();">
+            <img src="../image/walnut.jpeg" id="third" alt="third walnut" onclick="TryAgain();">
+        </div>
+        <div id="messages"></div>
+    </body>
+</html>
