@@ -9,6 +9,7 @@
             /* curly brackets must be around our named code */
             function SayHello() {
                 alert("Hello Web Developers");
+                /* onload event in the body tag */
             }
             
             function SecondFunction (){
@@ -17,7 +18,7 @@
             function ThirdFunction (){
                 alert("Third Alert");
             }
-           
+            /* second and third both run onclick in a tags */
         </script>
     </head>
     <body onload="SayHello();">
@@ -25,6 +26,7 @@
 
 
         <a onclick="SecondFunction();" href="">Second Function Link</a><br>
+        <!-- this ^^ this runs the function above when clicked -->
         <a onclick="ThirdFunction();" href="">Third Function Link</a>
     </body>
 

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unit 12 Notes</title>
+        <script>
+            function correct() {
+                document.getElementById("rightanswer").innerHTML = "True is correct!";
+                /* this locator finds and element by id then changes the html inside*/
+            }
+
+            function changeimage(){
+                document.getElementById("rollover").setAttribute('src','https://laferger.github.io/ist263/images/arrow_over.PNG')
+                /* this locater finds an element by id and then change the 
+                value of an attribute */
+            }
+
+            function changeback(){
+                document.getElementById("rollover").setAttribute('src','https://laferger.github.io/ist263/images/arrow.PNG')
+            }
+
+            function changecolor(){
+                document.getElementById("pagecolor").style.backgroundColor =
+                    document.getElementById("cp").value;
+                /* on the top we are locating the element that we want to change a style on
+                the bottom we are locating the value  of the form that holds the color hex # */
+            }
+        </script>
+    </head>
+    <body id="pagecolor">
+        <p>JavaScript is the only programming language that runs in your browser.</p >
+        <span id="rightanswer" onclick="correct()">True</span><br>
+        <span>False</span>
+        <br>
+
+        <img src="https://laferger.github.io/ist263/images/arrow.PNG" id="rollover" onmouseover="changeimage();" onmouseout="changeback();">
+
+        <form>
+            <input type="color" id="cp" onchange="changecolor();">
+        </form>
+    </body>
+    </body>
+</html>
